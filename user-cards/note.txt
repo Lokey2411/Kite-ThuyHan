@@ -1,0 +1,15 @@
+- useEffect: vd: const [number, setNumber] = useState(1);
+const addNumber = ()=>{
+    setNumber(number+1);// number = 2
+
+};
+
+const minusNumber = ()=>{
+    setNumber(number-1);
+}
+
+useEffect(
+    ()=>{
+        console.log(number);
+    },[number]
+)

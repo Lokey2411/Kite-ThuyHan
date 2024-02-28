@@ -1,0 +1,189 @@
+html {
+	font-family: Arial;
+	background-color: #776b5d;
+}
+
+a {
+	text-decoration: none;
+	color: #f3eeea;
+}
+
+h1 {
+	margin: 16px auto;
+	width: fit-content;
+	color: white;
+}
+
+#sign-in-form {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 340px;
+	padding: 24px 32px;
+	border-radius: 16px;
+	margin: auto;
+}
+
+label {
+	margin: 8px 0;
+	color: #4e453b;
+	margin-top: 16px;
+}
+
+input {
+	padding: 8px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	transition: 0.3s;
+	color: #4e453b;
+}
+
+button {
+	margin: auto;
+	margin-top: 24px;
+	padding: 8px;
+	height: 50px;
+	width: 150px;
+	border-radius: 20px;
+	font-weight: bold;
+	background-color: #b0a695;
+	color: white;
+	border: none;
+}
+
+button:hover {
+	background-color: #857767d0;
+}
+
+input:focus {
+	outline: none;
+	box-sizing: border-box;
+	background-color: #b0a6951a;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.card {
+	background-color: white;
+	margin: 32px auto;
+	width: 580px;
+	height: 250px;
+	display: flex;
+	border-radius: 16px;
+}
+
+.card-cover {
+	width: 30%;
+	height: 100%;
+	background-color: black;
+	position: relative;
+	transition: 0.7s;
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+	object-fit: cover;
+}
+
+.cover-img {
+	object-fit: cover;
+	position: absolute;
+	height: 100%;
+	width: 174px;
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+}
+
+.card-pfp {
+	height: 80px;
+	width: 80px;
+	border-radius: 100px;
+	position: absolute;
+	margin-left: 134px;
+	margin-top: 16px;
+	border: 5px solid white;
+	transition: 0.7s;
+}
+
+.card:hover .card-cover {
+	width: 100%;
+	border-radius: 16px;
+}
+
+.card:hover .card-pfp {
+	margin-left: 16px;
+}
+
+.card-content {
+	position: absolute;
+	margin-left: 174px;
+	z-index: 1;
+}
+
+.card-title {
+	margin: 0px 50px;
+	margin-top: 32px;
+	z-index: 1;
+}
+
+.card-title h1,
+.card-title p {
+	margin: 0;
+	z-index: 1;
+	color: black;
+}
+
+.card-description p {
+	margin: 8px 32px;
+	z-index: 1;
+	transition: 1s;
+}
+
+.cover-description {
+	opacity: 0;
+	position: relative;
+	color: white;
+	z-index: 10;
+	margin-right: 16px;
+	margin-left: 190px;
+	height: 200px;
+	width: 380px;
+	transition: 0.7s;
+	font-size: 16px;
+}
+
+.card:hover .cover-description {
+	opacity: 1;
+}
+
+textarea {
+	max-width: 324px;
+	min-width: 324px;
+	border-radius: 8px;
+	min-height: 100px;
+	padding: 8px;
+	font-family: Arial;
+}
+
+.card-description {
+	margin-left: 24px;
+	margin-top: 24px;
+}
+.inline {
+	display: flex;
+	align-items: flex-start;
+}
+
+.inline p {
+	margin: 0px;
+	margin-bottom: 8px;
+}
+
+.cardusername,
+.cardemail,
+.cardtel {
+	margin-left: 4px;
+}
+
+.bold {
+	font-weight: bold;
+}
